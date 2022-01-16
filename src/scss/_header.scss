@@ -52,12 +52,6 @@
                     transform: scale(1.2);
                 }
             }
-
-            &.hide1024 {
-                @include screen(1024) {
-                    display: none;
-                }
-            }
         }
     }
 
