@@ -22,7 +22,7 @@ img {
 body {
     font: 400 17px/1 $poppins;
     color: $light;
-    background: #041436 url('../images/background.jpg') no-repeat 50% 0;
+    background: #041436 url('../images/background.jpg') no-repeat 50% 100%;
 }
 
 a {
@@ -47,8 +47,13 @@ table {
 
 .container {
     max-width: 1200px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 
-    &-large {
+    &--large {
+        @extend .container;
         max-width: 1810px;
     }
 }
@@ -65,18 +70,12 @@ section {
     }
 }
 
-.container,
-.container-large {
-    min-width: 320px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     @include screen(768) {
         flex-direction: column; 
@@ -89,6 +88,10 @@ section {
         @include screen(768) {
             width: 100%;
         }
+    }
+
+    .col-25 {
+        width: calc(25% - 21px);
     }
 }
 
@@ -126,4 +129,8 @@ section {
         background: $gold;
         border-color: $gold;
     }
+}
+
+.gold-text {
+    color: $gold;
 }
