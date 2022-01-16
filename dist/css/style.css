@@ -518,9 +518,6 @@ section {
                 filter: brightness(0.7);
         -webkit-transform: scale(1.2);
                 transform: scale(1.2); }
-      @media (max-width: 1024px) {
-        .header__navigation .socials.hide1024 {
-          display: none; } }
   .header .icon {
     display: block;
     width: 20px;
