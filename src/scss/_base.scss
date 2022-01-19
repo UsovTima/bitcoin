@@ -20,7 +20,7 @@ img {
 }
 
 body {
-    font: 400 17px/1 $poppins;
+    font: 400 17px/1.7 $poppins;
     color: $light;
     background: #041436 url('../images/background.jpg') no-repeat 50% 100%;
 }
@@ -91,7 +91,19 @@ section {
 
     .col-25 {
         width: calc(25% - 21px);
+
+        @include screen(768) {
+            width: 100%;
+        }
     }
+}
+
+.title {
+   font: 600 45px/1.2 $poppins; 
+
+   @include screen(600) {
+        font-size: 35px;
+   }
 }
 
 .button {
