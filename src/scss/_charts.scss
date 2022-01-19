@@ -1,4 +1,5 @@
 .charts {
+    margin-bottom: 100px;
 
     .tabs {
 
@@ -35,12 +36,22 @@
 
             .row {
                 padding: 0 75px;
+
+                @include screen(1000) {
+                    padding: 0;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
 
             .col-50 {
                 display: block;
                 width: auto;
                 max-width: calc(50% - 20px);
+
+                @include screen(1000) {
+                    max-width: 100%;
+                }
             }
         }
 

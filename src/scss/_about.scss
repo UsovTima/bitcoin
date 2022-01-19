@@ -1,0 +1,67 @@
+.about {
+	&__wrapper {
+	    padding: 115px 84px 118px;
+	    margin-bottom: 95px;
+	    align-items: center;
+	    border: 1px dashed #f0f1f3;
+
+	    @include screen(1024) {
+	    	padding: 40px 30px;
+	    }
+
+	    @include screen(700) {
+	    	padding: 20px;
+	    }
+
+	    .col-50 {
+	    	flex-direction: column;
+	    }
+
+	    &-text {
+
+	    	.title {
+	    		padding: 0 0 80px;
+
+	    		@include screen(1024) {
+			    	padding: 15px 40px;
+			    }
+	    	}
+
+	    	.button-about {
+	    		    display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    background: transparent;
+				    border: 2px solid $white;
+				    max-width: 220px;
+				    margin: 80px 0 0;
+				    width: 100%;
+				    padding: 24px 0;
+				    transition: .4s;
+
+				    @include screen(1024) {
+				    	padding: 10px 0;
+				    	margin: 40px 0 0;
+				    }
+
+	    		a {
+	    			text-transform: capitalize;
+	    			color: $white;
+	    		}
+	    		
+	    		&:hover {
+			        background: $gold;
+			        border-color: $gold;
+			    }
+	    	}
+	    }
+
+	    &-image {
+	    	max-width: 380px;
+
+	    	@include screen(770) {
+		    	display: none!important;
+		    }
+	    }
+	}
+}

@@ -1,6 +1,13 @@
 .promo {
     padding: 95px 0 125px;
 
+    .col-25 {
+
+        @include screen(768) {
+            margin: 2% 0 0;
+        }
+    }
+
     &__item {
         transition: .4s;
         background: $white;
@@ -11,6 +18,11 @@
         text-align: center;
         align-items: center;
         color: $dark;
+
+        @include screen(1000) {
+            padding: 10px;
+            height: 280px;
+        }
 
         &:hover {
             background: $gold;
