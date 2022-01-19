@@ -1,7 +1,7 @@
 {
   "name": "bitcoin",
   "version": "1.0.0",
-  "description": "bitcoin template",
+  "description": "Bitcoin",
   "main": "src/index.js",
   "scripts": {
     "watch": "webpack --mode development --watch",
@@ -21,7 +21,7 @@
     "sass-loader": "^8.0.0",
     "terser-webpack-plugin": "^2.0.1",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.8"
   },
   "dependencies": {
     "autoprefixer": "^10.2.3",
@@ -29,6 +29,7 @@
     "html-loader": "^0.5.5",
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.4.1",
+    "jquery.marquee": "^1.6.0",
     "mini-css-extract-plugin": "^0.8.0",
     "swiper": "^7.3.1",
     "wowjs": "^1.1.3"

@@ -70,7 +70,6 @@ section {
     }
 }
 
-
 .row {
     width: 100%;
     display: flex;
@@ -133,4 +132,9 @@ section {
 
 .gold-text {
     color: $gold;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
