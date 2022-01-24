@@ -1,5 +1,5 @@
 window.$ = window.jQuery = require('jquery');
-// Swiper Home
+//Import for Swiper
 import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 Swiper.use([ Autoplay, Navigation, Pagination ]);
 import marquee from 'jquery.marquee';
@@ -14,6 +14,8 @@ $(document).ready(function (){
         search.classList.toggle('active');
         input.focus()
     });
+
+    //Swiper Home
 
     const swiper = new Swiper('.home__swiper', {
         loop: true,
@@ -67,4 +69,18 @@ $(document).ready(function (){
             video.pause();
     })
 
+    // Swiper Testimonials
+    const swiperClients = new Swiper('.testimonials__swiper', {
+        loop: true,
+        autoplay: {
+            delay: 8000,
+        },
+        slidesPerView: 1,
+        autoHeight: 'true',
+        pagination: {
+            el: '.testomonials__swiper-pagination',
+            type: 'bullets',
+            clickable: 'true',
+          },
+    });
 })

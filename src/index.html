@@ -54,7 +54,7 @@
     <main class="main">
         <section id="home" class="home">
             <div class="container--large">
-                <div class="home__swiper">
+                <div class="swiper home__swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <div class="row">
@@ -409,7 +409,59 @@
                 </div>
             </div>
         </section>
+        <section id="testimonials" class="testimonials">
+            <div class="container--large">
+                <div class="swiper testimonials__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h4 class="title">Testimonial</h4>
+                            <div class="testimonials__wrapper row">
+                                <div class="testimonials__wrapper-image col-20">
+                                   <img class="client" src="./images/client1.jpg" alt="client"> 
+                                   <p class="name">MorGan Den</p>
+                                   <p class="case">Bitcoin</p>
+                                   <img class="sign" src="./images/sign.png" alt="sign">
+                                </div>
+                                <div class="testimonials__wrapper-text col-80">
+                                    <p>more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and webmore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and webmore-or-less normal distribution of</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="title">Testimonial</h4>
+                            <div class="testimonials__wrapper row">
+                                <div class="testimonials__wrapper-image col-20">
+                                   <img class="client" src="./images/client2.jpg" alt="client"> 
+                                   <p class="name">MorGan Den</p>
+                                   <p class="case">Bitcoin</p>
+                                   <img class="sign" src="./images/sign.png" alt="sign">
+                                </div>
+                                <div class="testimonials__wrapper-text col-80">
+                                    <p>more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and webmore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and webmore-or-less normal distribution of</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="title">Testimonial</h4>
+                            <div class="testimonials__wrapper row">
+                                <div class="testimonials__wrapper-image col-20">
+                                   <img class="client" src="./images/client3.jpg" alt="client"> 
+                                   <p class="name">MorGan Den</p>
+                                   <p class="case">Bitcoin</p>
+                                   <img class="sign" src="./images/sign.png" alt="sign">
+                                </div>
+                                <div class="testimonials__wrapper-text col-80">
+                                    <p>more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and webmore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and webmore-or-less normal distribution of</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testomonials__swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
         <section class="video">
+            <h3 class="title">How It Works</h3>
             <div class="container">
                 <div class="video__container">
                     <video id="video" poster="./images/video.jpg" loop muted>
@@ -417,6 +469,22 @@
                     </video>
                     <div class="video__play paused"></div>
                 </div>
+            </div>
+        </section>
+        <section id="request" class="request">
+            <div class="container">
+                <div class="title">
+                    <h4>Requeste a Call Back</h4>
+                </div>
+                <form class="request__form">
+                    <input class="request__form-input" type="text" name="name" placeholder="Full Name">
+                    <input class="request__form-input" type="email" name="email" placeholder="Email">
+                    <input class="request__form-input" type="tel" name="telephone" placeholder="Phone Number">
+                    <input class="request__form-input" type="text" name="message" placeholder="Message">
+                    <div class="request__form-button">
+                        <button class="button">Send</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
