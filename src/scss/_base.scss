@@ -101,8 +101,12 @@ section {
 .title {
    font: 600 45px/1.2 $poppins; 
 
-   @include screen(600) {
+   @include screen(700) {
         font-size: 35px;
+   }
+
+   @include screen(400) {
+        font-size: 25px;
    }
 }
 
